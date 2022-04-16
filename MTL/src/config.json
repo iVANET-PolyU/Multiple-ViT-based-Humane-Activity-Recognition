@@ -1,0 +1,20 @@
+{
+  "NUM_EPOCH":70,
+  "BATCH_SIZE": 64,
+  "optimizer": "SGD",
+  "lr": 0.01,
+  "model": "ViT",
+  "normalization_type": "loss+",
+  "algorithm": "mgda",
+  "use_approximation": true,
+  "dim": 90,
+  "depth": 2,
+  "heads": 4,
+  "mlp_dim": 200,
+  "tasks": ["Zero Person", "One Person", "One+ Person", "Fall", "Sit Down", "Stand up", "Walk",
+    "lie Down", "Dynamic Activity", "Static Activity"],
+  "scales": {"Zero Person":0.025, "One Person":0.025, "One+ Person":0.025, "Fall":0.025, "Sit Down":0.025,
+    "Stand up":0.025, "Walk":0.025, "lie Down":0.025, "Dynamic Activity":0.025, "Static Activity":0.025},
+  "parallel": true,
+  "lr_type": "cosin"
+}
